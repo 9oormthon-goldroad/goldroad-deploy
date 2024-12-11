@@ -1,0 +1,7 @@
+CREATE SCHEMA IF NOT EXISTS `goldroad` DEFAULT CHARACTER SET utf8mb4;
+
+GRANT ALL ON *.* TO 'goldroad' @'%' IDENTIFIED BY 'root' WITH GRANT OPTION;
+
+GRANT ALL ON goldroad.* TO 'goldroad' @'%';
+
+FLUSH PRIVILEGES;
